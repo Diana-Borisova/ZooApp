@@ -76,6 +76,6 @@ this.animals.add(animal);
             sb.append(String.format("Calories: %d", this.foods.stream().mapToInt(Food::getCalories).sum())).append(System.lineSeparator());
         }
 
-        return null;
+        return sb.toString().trim();
     }
 }
